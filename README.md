@@ -39,6 +39,26 @@ I also explored distributional differences using boxplots and histograms to visu
 To reproduce the full pipeline and analysis:
 
 ### Setup
-1. Clone this repository and install the dependencies:
-   ```bash
-   pip install -r requirements.txt
+
+To run this project and reproduce the full analysis, follow these steps:
+
+1. **Download or clone the repository.**
+
+2. **Install Python and all required libraries** listed in `requirements.txt`. These include libraries like `pandas`, `matplotlib`, `seaborn`, `requests`, and `python-dotenv`.
+
+3. **Create a `.env` file** in the root of the repository. This file will store the API keys required to run the pipeline. Add the following lines to your `.env` file (with your actual credentials):
+
+>  **Do not include your API keys in the repository.** This `.env` file is used securely to keep them private.
+
+4. **Open and run the notebook file: `results.ipynb`**
+
+Once your `.env` file is set up, open `results.ipynb` and run all the cells from top to bottom. The notebook will:
+- Load and clean the movie data
+- Use the Genderize API to determine director gender
+- Use the OMDb API to fetch Rotten Tomatoes scores
+- Generate all visualizations used in the analysis
+
+All functional code lives in the `src/` folder. The notebook simply calls those functions, so you do not need to edit or run any `.py` files directly.
+
+
+

@@ -22,7 +22,7 @@ After cleaning the Kaggle dataset and filtering out movies with missing Rotten T
 - **Average IMDb Rating**
 - **Average Rotten Tomatoes Score**
 
-I also explored distributional differences using boxplots and histograms to visualize spread, medians, and outliers for each metric by gender. Finally, I created a grouped summary chart to compare all three metrics side-by-side.
+I also explored distributional differences using boxplots and histograms to visualize spread, medians, and outliers for each metric by gender. 
 
 ---
 

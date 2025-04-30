@@ -1,4 +1,11 @@
 .Ds_Store
+.ipynb_checkpoints/
+
+__pycache__/
+*.pyc
+*.pyo
+
+imdb_top_1000.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

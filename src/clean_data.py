@@ -18,10 +18,10 @@ def clean_imdb_data(filepath):
     df['Released_Year'] = df['Released_Year'].astype(int)
 
     # Clean Gross (remove $/commas if needed, then convert to float)
-    df['Gross'] = df['Gross'].replace('[\$,]', '', regex=True).astype(float)
+    df['Gross'] = df['Gross'].replace(r'[\$,]', '', regex=True).astype(float)
+
 
     # Extract first names for gender prediction
     df['Director_First'] = df['Director'].apply(lambda x: x.split()[0])
-    df['Star1_First'] = df['Star1'].apply(lambda x: x.split()[0] if pd.notnull(x) else None)
-
+    
     return df

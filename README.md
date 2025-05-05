@@ -28,9 +28,13 @@ I also explored distributional differences using boxplots and histograms to visu
 
 ## Summary of Results
 
-- **Gross**: On average, male-directed movies had higher box office revenue, but female-directed films showed notable success in many cases.
-- **IMDb + RT Scores**: Ratings between male- and female-directed films were comparable, and in some cases, female-directed films were rated slightly higher on average.
+- **Gross**: On average, male-directed movies had higher box office revenue, but female-directed films showed notable success in many cases. In addition, male-directed movies vastly outnumbered female-directed ones, which helps explain the greater number of blockbuster outliers in that group — not necessarily better performance overall, but more access to high-budget opportunities.
+- **IMDb + RT Scores**: Ratings between male- and female-directed films were comparable, and in some cases, female-directed films were rated slightly higher on average. This indicates that even with less representation, female directed films still resonate with viewers.
 - **Representation**: Female directors were significantly underrepresented in the dataset, highlighting an ongoing gap in opportunity.
+- **Distributions**: I also analyzed the spread of scores using boxplots and histograms. Male-directed films had more high-grossing outliers, which aligns with their greater representation in big-budget projects. However, the distributions of IMDb and Rotten Tomatoes scores were similarly shaped for both genders, showing no major difference in variability or consistency.
+- **Gross vs. IMDb (Scatter Plot)**: I visualized the relationship between box office revenue and IMDb ratings, separated by gender. While male-directed films appeared more frequently in the high-gross range, the quality of films — as reflected by IMDb scores — was comparable across genders, highlighting that access to big-budget films likely plays a larger role than audience approval.
+
+
 
 ---
 

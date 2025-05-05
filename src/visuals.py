@@ -9,7 +9,8 @@ gender_colors = {
 
 def plot_gross_by_gender(df):
     plt.figure(figsize=(8, 6))
-    sns.barplot(data=df, x='Director_Gender', y='Gross', palette=gender_colors)
+    sns.barplot(data=df, x='Director_Gender', y='Gross', hue='Director_Gender', palette=gender_colors, legend=False)
+    plt.legend().remove()
     plt.title('Average Gross Earnings by Director Gender')
     plt.xlabel('Director Gender')
     plt.ylabel('Average Gross ($)')
@@ -18,7 +19,8 @@ def plot_gross_by_gender(df):
 
 def plot_imdb_by_gender(df):
     plt.figure(figsize=(8, 6))
-    sns.barplot(data=df, x='Director_Gender', y='IMDB_Rating', palette=gender_colors)
+    sns.barplot(data=df, x='Director_Gender', y='IMDB_Rating', hue='Director_Gender', palette=gender_colors, legend=False)
+    plt.legend().remove()
     plt.title('Average IMDb Rating by Director Gender')
     plt.xlabel('Director Gender')
     plt.ylabel('Average IMDb Rating')
@@ -36,7 +38,8 @@ def plot_boxplot_gross_by_gender(df):
 
 def plot_rotten_tomatoes_by_gender(df):
     plt.figure(figsize=(8, 6))
-    sns.barplot(data=df, x='Director_Gender', y='Rotten_Tomatoes_Score', palette=gender_colors)
+    sns.barplot(data=df, x='Director_Gender', y='Rotten_Tomatoes_Score', hue='Director_Gender', palette=gender_colors, legend=False)
+    plt.legend().remove()
     plt.title('Average Rotten Tomatoes Score by Director Gender')
     plt.xlabel('Director Gender')
     plt.ylabel('Average Rotten Tomatoes Score (%)')
